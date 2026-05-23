@@ -1,0 +1,200 @@
+/* GlazeWM - Tema Escuro Roxo com Transparência */
+
+* {
+  /* Cores base do tema roxo escuro */
+  --bg-primary: #1a0f2e;
+  --bg-secondary: #2d1b4e;
+  --bg-tertiary: #3d2563;
+  --accent-purple: #8b5fbf;
+  --accent-light: #b88dd9;
+  --text-primary: #e8d5f2;
+  --text-secondary: #c9b3d8;
+  --border-color: #6b4890;
+}
+
+/* Janelas dos aplicativos */
+.app-window {
+  background-color: rgba(26, 15, 46, 0.6);
+  border: 2px solid #8b5fbf;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(139, 95, 191, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.app-window:focus {
+  border-color: #b88dd9;
+  box-shadow: 0 8px 32px rgba(184, 141, 217, 0.35);
+}
+
+/* Barra de título */
+.titlebar {
+  background-color: rgba(45, 27, 78, 0.6);
+  color: #e8d5f2;
+  border-bottom: 1px solid #6b4890;
+  padding: 8px 12px;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+.titlebar-button {
+  color: #b88dd9;
+  transition: all 0.2s ease;
+}
+
+.titlebar-button:hover {
+  color: #e8d5f2;
+  background-color: rgba(139, 95, 191, 0.3);
+  border-radius: 4px;
+}
+
+/* Menu principal */
+.menu {
+  background-color: rgba(26, 15, 46, 0.6);
+  border: 1px solid #6b4890;
+  border-radius: 6px;
+  color: #e8d5f2;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+  padding: 8px 12px;
+  color: #e8d5f2;
+  transition: all 0.15s ease;
+}
+
+.menu-item:hover {
+  background-color: rgba(139, 95, 191, 0.4);
+  color: #b88dd9;
+}
+
+/* Barra de tarefas */
+.taskbar {
+  background-color: rgba(26, 15, 46, 0.6);
+  border-top: 1px solid #6b4890;
+  backdrop-filter: blur(10px);
+  padding: 8px 12px;
+}
+
+.taskbar-item {
+  background-color: rgba(61, 37, 99, 0.6);
+  color: #e8d5f2;
+  border: 1px solid #6b4890;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin: 0 4px;
+  transition: all 0.2s ease;
+}
+
+.taskbar-item:hover {
+  background-color: rgba(139, 95, 191, 0.4);
+  border-color: #b88dd9;
+  color: #b88dd9;
+}
+
+.taskbar-item.active {
+  background-color: rgba(139, 95, 191, 0.6);
+  border-color: #b88dd9;
+  box-shadow: 0 0 12px rgba(139, 95, 191, 0.5);
+}
+
+/* Inputs e campos de texto */
+input[type="text"],
+input[type="search"],
+textarea,
+select {
+  background-color: rgba(45, 27, 78, 0.6);
+  color: #e8d5f2;
+  border: 1px solid #6b4890;
+  border-radius: 4px;
+  padding: 8px 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #b88dd9;
+  box-shadow: 0 0 8px rgba(139, 95, 191, 0.3);
+  outline: none;
+}
+
+/* Botões */
+button {
+  background-color: rgba(139, 95, 191, 0.6);
+  color: #e8d5f2;
+  border: 1px solid #8b5fbf;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: rgba(139, 95, 191, 0.8);
+  border-color: #b88dd9;
+  color: #b88dd9;
+  box-shadow: 0 4px 12px rgba(139, 95, 191, 0.4);
+}
+
+button:active {
+  background-color: rgba(139, 95, 191, 1);
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(45, 27, 78, 0.4);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 95, 191, 0.6);
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(184, 141, 217, 0.8);
+}
+
+/* Tooltips */
+.tooltip {
+  background-color: rgba(26, 15, 46, 0.8);
+  color: #b88dd9;
+  border: 1px solid #6b4890;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  backdrop-filter: blur(10px);
+}
+
+/* Notificações */
+.notification {
+  background-color: rgba(139, 95, 191, 0.6);
+  border-left: 4px solid #b88dd9;
+  color: #e8d5f2;
+  padding: 12px;
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+}
+
+/* Fundo do desktop */
+body,
+html {
+  background-color: #1a0f2e;
+  color: #e8d5f2;
+}
